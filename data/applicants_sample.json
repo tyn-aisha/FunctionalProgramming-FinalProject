@@ -1,0 +1,8 @@
+[
+  { "name": "Zorp",  "race": "Zorgian",    "tentacles": 6,  "eyes": 2, "aggression": 10, "compatibility": 90 },
+  { "name": "Blarg", "race": "Blargonian", "tentacles": 10, "eyes": 8, "aggression": 55, "compatibility": 70 },
+  { "name": "Xylo",  "race": "Xylosian",   "tentacles": 2,  "eyes": 2, "aggression": 30, "compatibility": 50 },
+  { "name": "Grakk", "race": "Grakkian",   "tentacles": 12, "eyes": 4, "aggression": 95, "compatibility": 80 },
+  { "name": "Mimi",  "race": "Mimikian",   "tentacles": 0,  "eyes": 0, "aggression": 0,  "compatibility": 100 },
+  { "name": "Vexa",  "race": "Vexari",     "tentacles": 4,  "eyes": 6, "aggression": 20, "compatibility": 15 }
+]
