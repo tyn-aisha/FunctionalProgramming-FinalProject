@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.env
+secrets.json
+TestResults/
+output/
+*.tmp
+native/test_native

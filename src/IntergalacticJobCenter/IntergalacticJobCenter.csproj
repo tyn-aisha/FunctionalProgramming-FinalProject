@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>IntergalacticJobCenter</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)../../native/runtimes/linux-x64/libijc_native.so"
+          Condition="$([MSBuild]::IsOSPlatform('Linux')) And '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'X64' And Exists('$(MSBuildThisFileDirectory)../../native/runtimes/linux-x64/libijc_native.so')"
+          Link="libijc_native.so" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(MSBuildThisFileDirectory)../../native/runtimes/linux-arm64/libijc_native.so"
+          Condition="$([MSBuild]::IsOSPlatform('Linux')) And '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'Arm64' And Exists('$(MSBuildThisFileDirectory)../../native/runtimes/linux-arm64/libijc_native.so')"
+          Link="libijc_native.so" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(MSBuildThisFileDirectory)../../native/runtimes/win-x64/ijc_native.dll"
+          Condition="$([MSBuild]::IsOSPlatform('Windows')) And Exists('$(MSBuildThisFileDirectory)../../native/runtimes/win-x64/ijc_native.dll')"
+          Link="ijc_native.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(MSBuildThisFileDirectory)../../native/runtimes/osx-arm64/libijc_native.dylib"
+          Condition="$([MSBuild]::IsOSPlatform('OSX')) And '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'Arm64' And Exists('$(MSBuildThisFileDirectory)../../native/runtimes/osx-arm64/libijc_native.dylib')"
+          Link="libijc_native.dylib" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(MSBuildThisFileDirectory)../../native/runtimes/osx-x64/libijc_native.dylib"
+          Condition="$([MSBuild]::IsOSPlatform('OSX')) And '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'X64' And Exists('$(MSBuildThisFileDirectory)../../native/runtimes/osx-x64/libijc_native.dylib')"
+          Link="libijc_native.dylib" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
