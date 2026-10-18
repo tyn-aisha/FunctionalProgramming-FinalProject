@@ -1,0 +1,14 @@
+namespace IntergalacticJobCenter.Models;
+
+/// <summary>
+/// A validated alien applicant. Only the parser creates instances from raw text,
+/// so every value in this record has already passed boundary validation.
+/// Zero tentacles / zero eyes / zero aggression are legitimate values.
+/// </summary>
+public sealed record AlienApplicant(
+    string Name,
+    string Race,
+    int Tentacles,
+    int Eyes,
+    int Aggression,
+    int Compatibility);
