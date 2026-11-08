@@ -4,13 +4,13 @@ Introduction to Functional Programming | Academic year 2026–2027 | C# / .NET 8
 
 | Item | Value |
 |---|---|
-| Repository URL | [fill in] |
-| Branch | [fill in] |
-| Final commit identifier | [fill in] |
+| Repository URL | https://github.com/tyn-aisha/FunctionalProgramming-FinalProject.git  |
+| Branch | [main] |
+| Final commit identifier | c1b2b6e |
 | .NET SDK | 8.0 or newer (`dotnet --version`) |
 | Native toolchain | C99 compiler (`gcc` or `clang`), or MSVC `cl` on Windows |
 
-Team: Dinmukhammet Imanalyuly, Aisha Tynyshtykbay (IT-2505), Yeraly Seitzhan, Bertan Maidabek (groups of the other members: [fill in]).
+Team: Dinmukhammet Imanalyuly, Aisha Tynyshtykbay (IT-2505), Yeraly Seitzhan, Bertan Maidabek.
 
 ## 1. Problem, users, goals
 
@@ -133,9 +133,10 @@ Datasets are materialised in `ApplicantFileLoader.Load` (`ImmutableArray`), `App
 - The interface is a console menu; there is no web or desktop interface, database, login or multithreading.
 - Applicant names must not contain commas in the CSV input format (JSON has no such limit).
 
-## 10. References
-
-Microsoft documentation for .NET 8, `System.Text.Json`, LINQ and native interop (P/Invoke); xUnit documentation; course lectures and Assignments 5–8 (`docs/`). Generative AI assistance acknowledgement: [fill in according to the syllabus and the instructor's permission].
+## 10. References and acknowledgements
+- Microsoft documentation for .NET 8, LINQ, `System.Text.Json` and native interoperability (P/Invoke).
+- xUnit testing framework documentation.
+- Course lectures and the Assignment 5–8 briefs for Introduction to Functional Programming (Astana IT University).
 
 ## 11. Responsibilities
 
